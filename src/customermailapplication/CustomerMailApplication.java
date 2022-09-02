@@ -52,7 +52,7 @@ public class CustomerMailApplication {
                 stringType="Delinquent";
                 break;
         }
-        Customer app = CustomerFactory.getCustomerTypeFromUser(stringType);
+        Customer app = CustomerFactory.createCustomer(stringType);
         if (app==null){
             System.out.println("Error : Input is wrong. Please try again.");
         }else{

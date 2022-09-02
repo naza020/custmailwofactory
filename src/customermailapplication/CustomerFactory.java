@@ -11,8 +11,8 @@ package customermailapplication;
  */
 public class CustomerFactory {
     
-     public static Customer getCustomerTypeFromUser(String customerType) {
-        switch(customerType) {
+     public static Customer createCustomer(String type) {
+        switch(type) {
             case "Regular":
                 return new RegularCustomer();
             case "Mountain":
